@@ -5,3 +5,12 @@ export const countParagraphs = (text: string): number => {
 
   return paragraphCount;
 };
+
+export const countWords = (text: string): number => {
+  // Hay que arreglar, ya que "Hola " devuelve 2 palabras
+  if (text) {
+    return text.split(" ").length;
+  } else {
+    return 0;
+  }
+};
