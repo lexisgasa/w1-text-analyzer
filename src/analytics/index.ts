@@ -1,4 +1,7 @@
 export const countParagraphs = (text: string): number => {
-  const paragraphs = text.split(/\n\s*/).length;
-  return paragraphs;
+  const paragraphCount = text
+    .split(/\n\s*/)
+    .filter((paragraphs) => paragraphs.trim().length > 0).length;
+
+  return paragraphCount;
 };
