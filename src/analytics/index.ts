@@ -13,3 +13,11 @@ export const countWords = (text: string): number => {
 
   return text.trim().split(" ").length;
 };
+
+export const countCharacters = (text: string): number => {
+  if (!text) {
+    return 0;
+  }
+
+  return text.replace(/\s/, "").length;
+};
