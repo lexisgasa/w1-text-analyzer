@@ -32,3 +32,11 @@ export const countShortWords = (
 
   return text.split(" ").filter((word) => word.length <= maxLength).length;
 };
+
+export const getWordsList = (wordList: string[]): string => {
+  if (wordList.length === 0) {
+    return "";
+  }
+
+  return wordList.join(" ");
+};
