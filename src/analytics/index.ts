@@ -93,3 +93,7 @@ export const convertCamelCase = (text: string): string => {
 
   return convertedWords.join(" ");
 };
+
+export const convertKebabCase = (text: string): string => {
+  return text.split(" ").join("-");
+};
