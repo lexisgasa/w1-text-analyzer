@@ -5,7 +5,7 @@ const test1 = () => {
     "\ngetWordsList function should return and empty string if an empty string is given"
   );
 
-  const list = [""];
+  const list = "";
   const wordList = getWordsList(list);
   const expectedWordList = "";
 
@@ -21,16 +21,7 @@ const test2 = () => {
     "\ngetWordsList function should return 'Voy,bastante,apurado,pero,de,todo,se,sale'"
   );
 
-  const list = [
-    "Voy",
-    "bastante",
-    "apurado",
-    "pero",
-    "de",
-    "todo",
-    "se",
-    "sale",
-  ];
+  const list = "Voy bastante apurado pero de todo se sale";
   const wordList = getWordsList(list);
   const expectedWordList = "Voy,bastante,apurado,pero,de,todo,se,sale";
 
