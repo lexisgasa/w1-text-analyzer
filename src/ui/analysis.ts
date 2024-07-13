@@ -1,5 +1,6 @@
 import {
   convertCamelCase,
+  convertKebabCase,
   countCharacters,
   countParagraphs,
   countShortWords,
@@ -143,4 +144,5 @@ export const analyzeText = (text: string): void => {
   renderReversedWords(getReverseWords(text));
   renderReversedText(getReverseText(text));
   renderCamelCase(convertCamelCase(text));
+  renderKebabCase(convertKebabCase(text));
 };
