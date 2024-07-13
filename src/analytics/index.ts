@@ -83,3 +83,13 @@ export const getForbiddenWords = (
 
   return censoredText;
 };
+
+export const convertCamelCase = (text: string): string => {
+  const words = text.split(" ");
+
+  const convertedWords = words.map((word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  return convertedWords.join(" ");
+};
