@@ -15,10 +15,6 @@ export const countWords = (text: string): number => {
 };
 
 export const countCharacters = (text: string): number => {
-  if (!text) {
-    return 0;
-  }
-
   return text.replace(/\s/, "").length;
 };
 
@@ -39,4 +35,8 @@ export const getWordsList = (wordList: string): string => {
   }
 
   return wordList.split(" ").join(",");
+};
+
+export const getPalindrome = (text: string): string => {
+  return "asd";
 };
