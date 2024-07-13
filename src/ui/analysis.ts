@@ -1,4 +1,5 @@
 import {
+  convertCamelCase,
   countCharacters,
   countParagraphs,
   countShortWords,
@@ -141,4 +142,5 @@ export const analyzeText = (text: string): void => {
   renderPalindromes(getPalindrome(text));
   renderReversedWords(getReverseWords(text));
   renderReversedText(getReverseText(text));
+  renderCamelCase(convertCamelCase(text));
 };
