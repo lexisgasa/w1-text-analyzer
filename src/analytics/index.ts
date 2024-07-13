@@ -60,3 +60,7 @@ export const getFrequency = (text: string, targetWord: string): number => {
 export const getReverseWords = (text: string): string => {
   return text.split("").reverse().join("");
 };
+
+export const getReverseText = (text: string): string => {
+  return text.split(" ").reverse().join(" ");
+};
