@@ -38,5 +38,12 @@ export const getWordsList = (wordList: string): string => {
 };
 
 export const getPalindrome = (text: string): string => {
-  return "asd";
+  const words = text.split(" ");
+
+  const palindromes = words.filter((word) => {
+    const reverseWord = word.split("").reverse().join("");
+    return reverseWord.toLowerCase() === word.toLowerCase();
+  });
+
+  return palindromes.join(", ");
 };
