@@ -1,6 +1,6 @@
 import { countCharacters } from "../index.js";
 
-const test1 = () => {
+const test1 = (): void => {
   console.log(
     "\ncountCharacters function should return 0 if an empty string is given"
   );
@@ -16,7 +16,7 @@ const test1 = () => {
   }
 };
 
-const test2 = () => {
+const test2 = (): void => {
   console.log("\ncountCharacters function should return 9 characters");
 
   const expectedWordsCount = 9;

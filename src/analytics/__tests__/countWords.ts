@@ -1,6 +1,6 @@
 import { countWords } from "../index.js";
 
-const test1 = () => {
+const test1 = (): void => {
   console.log(
     "\ncountWords function should return 0 if an empty string is provided"
   );
@@ -15,7 +15,7 @@ const test1 = () => {
   }
 };
 
-const test2 = () => {
+const test2 = (): void => {
   console.log("\ncountWords function should return 3");
 
   const text = "Soy un bebeloper";
