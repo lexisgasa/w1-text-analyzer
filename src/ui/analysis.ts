@@ -3,7 +3,9 @@ import {
   countParagraphs,
   countShortWords,
   countWords,
+  getFrequency,
   getPalindrome,
+  getReverseWords,
   getWordsList,
 } from "../analytics/index.js";
 
@@ -136,4 +138,5 @@ export const analyzeText = (text: string): void => {
   renderShortWordsTotal(countShortWords(text, 5));
   renderShortWordsList(getWordsList(text));
   renderPalindromes(getPalindrome(text));
+  renderReversedWords(getReverseWords(text));
 };
