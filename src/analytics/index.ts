@@ -64,3 +64,22 @@ export const getReverseWords = (text: string): string => {
 export const getReverseText = (text: string): string => {
   return text.split(" ").reverse().join(" ");
 };
+
+export const getForbiddenWords = (
+  text: string,
+  forbiddenWords: string[]
+): string => {
+  const words = text.split(" ");
+
+  const censoredText = words
+    .map((word) => {
+      if (forbiddenWords.includes(word.toLowerCase())) {
+        return "*".repeat(word.length);
+      } else {
+        return word;
+      }
+    })
+    .join(" ");
+
+  return censoredText;
+};
