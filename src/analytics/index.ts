@@ -38,5 +38,5 @@ export const getWordsList = (wordList: string[]): string => {
     return "";
   }
 
-  return wordList.join(" ");
+  return wordList.join(",");
 };
