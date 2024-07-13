@@ -47,3 +47,12 @@ export const getPalindrome = (text: string): string => {
 
   return palindromes.join(", ");
 };
+
+export const getFrequency = (text: string, targetWord: string): number => {
+  const words = text.split(" ");
+  let count = 0;
+
+  words.forEach((word) => (word === targetWord ? count++ : 0));
+
+  return count;
+};
