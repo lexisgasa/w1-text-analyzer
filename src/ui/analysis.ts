@@ -6,6 +6,7 @@ import {
   countParagraphs,
   countShortWords,
   countWords,
+  getForbiddenWords,
   getFrequency,
   getPalindrome,
   getReverseText,
@@ -109,6 +110,7 @@ const listenForbiddenWordsChanges = (text: string): void => {
       );
 
       // Render the forbidden words
+      getForbiddenWords(text, forbiddenWords);
     });
 };
 
