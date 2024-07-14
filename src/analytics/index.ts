@@ -91,7 +91,7 @@ export const convertCamelCase = (text: string): string => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   });
 
-  return convertedWords.join(" ");
+  return convertedWords.join("");
 };
 
 export const convertKebabCase = (text: string): string => {
