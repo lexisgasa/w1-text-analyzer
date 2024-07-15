@@ -49,12 +49,9 @@ export const getPalindrome = (text: string): string => {
 };
 
 export const getFrequency = (text: string, targetWord: string): number => {
-  const words = text.split(" ");
-  let count = 0;
-
-  words.forEach((word) => (word === targetWord ? count++ : 0));
-
-  return count;
+  return text
+    .split(" ")
+    .filter((word) => word.toLowerCase() === targetWord.toLowerCase()).length;
 };
 
 export const getReverseWords = (text: string): string => {
